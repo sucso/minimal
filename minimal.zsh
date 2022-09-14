@@ -119,6 +119,13 @@ function mnml_hg_no_color {
    done
 }
 
+function mnml_uh {
+    local _w="%{\e[0m%}"
+    local _g="%{\e[38;5;244m%}"
+
+    printf '%b' "$_g%n$_w@$_g%m$_w"
+}
+
 function mnml_uhp {
     local _w="%{\e[0m%}"
     local _g="%{\e[38;5;244m%}"
